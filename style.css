@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkblue;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: greenyellow;
+    font-size: 70px;
+    font-family: monospace;
+}
+
+h3 {
+    color: azure;
+    font-family: cursive;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 100px;
+    border: 2px solid greenyellow;
+    cursor: pointer;
+}
+
+#reset-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 22px;
+    background-color: blue;
+    color: greenyellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset-button:hover {
+    border: 2px solid ghostwhite;
+}
